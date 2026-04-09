@@ -1,8 +1,15 @@
 {
-  "version": "0.0.0",
+  "version": "0.0.1",
   "name": "@miempresa/shared",
-  "main": "dist/miempresa/shared/index.js",
-  "types": "dist/miempresa/shared/index.d.ts",
+  "main": "dist/miempresa/shared/fesm2022/miempresa-shared.mjs",
+  "module": "dist/miempresa/shared/fesm2022/miempresa-shared.mjs",
+  "typings": "dist/miempresa/shared/types/miempresa-shared.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/miempresa/shared/types/miempresa-shared.d.ts",
+      "default": "./dist/miempresa/shared/fesm2022/miempresa-shared.mjs"
+    }
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
