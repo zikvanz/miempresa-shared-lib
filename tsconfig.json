@@ -3,6 +3,10 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@miempresa/shared": ["./dist/miempresa/shared"],
+      "shared": ["./dist/shared"]
+    },
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -21,5 +25,19 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true
   },
-  "files": []
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/miempresa/shared/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/miempresa/shared/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/shared/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/shared/tsconfig.spec.json"
+    }
+  ]
 }
