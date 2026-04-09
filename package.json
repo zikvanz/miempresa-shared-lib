@@ -1,6 +1,8 @@
 {
-  "name": "shared-lib",
+  "name": "miempresa-shared-lib",
   "version": "0.0.0",
+  "main": "dist/shared/index.js",
+  "types": "dist/shared/index.d.ts",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +10,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
+  "private": false,
   "packageManager": "npm@11.9.0",
   "dependencies": {
     "@angular/common": "^21.2.0",
